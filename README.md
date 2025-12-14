@@ -34,7 +34,7 @@ This ensures honest, explainable, and actionable feedback.
 - **Hosting:** Vercel
 
 ## 🌐 Live Demo
-👉 **[Live Application](https://gitgrade-app.vercel.app/)**
+👉 **[Live Application](https://gitgrade-lemon.vercel.app/)**
 
 ## ⚠️ Limitations
 - Only public repositories are supported
