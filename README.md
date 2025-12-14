@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GitGrade – Repository Analyzer
 
-## Getting Started
+GitGrade is an AI-assisted tool that evaluates a GitHub repository and converts it into a
+**Score, Summary, and Personalized Improvement Roadmap**, simulating feedback from a
+technical mentor or recruiter.
 
-First, run the development server:
+## 🚀 Problem Statement
+Students often push code to GitHub without knowing how clean, complete, or
+industry-ready it looks. GitGrade acts as a **Repository Mirror**, reflecting strengths
+and weaknesses purely from repository data.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🧠 How It Works
+1. User pastes a **public GitHub repository URL**
+2. GitGrade fetches repository metadata using the GitHub REST API
+3. The system evaluates:
+   - Commit activity
+   - Project size & structure
+   - Tech stack usage
+   - Documentation presence
+   - Community signals (stars/forks)
+4. Generates:
+   - **Score (0–100)**
+   - **Written Summary**
+   - **Personalized Roadmap**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🧪 Evaluation Logic
+The scoring system uses heuristic-based rules derived from real repository signals.
+This ensures honest, explainable, and actionable feedback.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠 Tech Stack
+- **Frontend:** Next.js (App Router), TypeScript, Tailwind CSS
+- **Backend:** Next.js API Routes
+- **API:** GitHub REST API
+- **Hosting:** Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🌐 Live Demo
+👉 **[Live Application](https://gitgrade-app.vercel.app/)**
 
-## Learn More
+## ⚠️ Limitations
+- Only public repositories are supported
+- Static analysis and test coverage detection are heuristic-based
+- GitHub API rate limits may apply
 
-To learn more about Next.js, take a look at the following resources:
+## 🎯 Future Improvements
+- Deeper static code analysis
+- Test coverage detection
+- ML-based scoring models
+- User authentication and history tracking
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built for **GitGrade Hackathon** 🚀
