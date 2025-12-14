@@ -48,7 +48,18 @@ export default function Home() {
 {result && (
   <div className="mt-6 space-y-4">
     <div className="text-center">
-      <p className="text-4xl font-bold">{result.score} / 100</p>
+      <p
+        className={`text-4xl font-bold ${
+          result.score >= 75
+            ? "text-green-600"
+            : result.score >= 50
+            ? "text-yellow-500"
+            : "text-red-500"
+        }`}
+      >
+        {result.score} / 100
+      </p>
+
       <p className="text-gray-600">GitGrade Score</p>
     </div>
 
